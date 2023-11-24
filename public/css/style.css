@@ -1,0 +1,101 @@
+/* form sign in */
+  .form-signin {
+      max-width: 700px;
+      padding: 1rem;
+  }
+  
+  .form-signin .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+/* end form sign in */
+
+/* start sidebar */
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+  }
+  .sidebar-link .right-icon {
+    display: inline-flex;
+  }
+  
+  @keyframes rotation-icon{
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+
+  @keyframes rotation-iconback{
+    0% {
+      transform: rotate(90deg);
+    }
+  }
+
+  .sidebar-link[aria-expanded="true"] .right-icon {
+    animation: rotation-icon 100ms linear;
+    animation-fill-mode: forwards;
+  }
+
+  .sidebar-link[aria-expanded="false"] .right-icon {
+    animation: rotation-iconback 100ms linear;
+    animation-fill-mode: forwards;
+  }
+
+  .sidebar-footer {
+    background-color: #f5f5f5; /* Background color for the footer */
+    padding: 10px; /* Add padding for spacing */
+    position: absolute; /* Position the footer absolutely within the offcanvas container */
+    bottom: 0; /* Stick the footer to the bottom of the container */
+    left:0;
+    width: 100%; /* Make the footer full-width within the container */
+  
+  }
+
+  .sidebar-nav{
+    visibility: visible !important;
+    top: 56px !important;
+    max-width: 260px;
+    background-color: #0e00c3 !important;
+    font-family: 'League Spartan';
+  }
+
+   /* end sidebar */
+
+   .navbar-main{
+    background-color: #0e00c3;
+    font-family:  Helvetica;
+  }
+
+  .brand-logo{
+    object-fit: cover;
+  }
+
+  body{
+    overflow: auto !important;
+  }
+
+   /* this is to remove the backdrop */
+   .offcanvas-backdrop {
+    display: none;
+
+  }
+
+  
+  
+
+  .content{
+    margin-left: 265px;
+    width: 70%;
+    font-family: Montserrat;
+  }
